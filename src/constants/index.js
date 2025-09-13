@@ -160,7 +160,7 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Nikhil brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+      "Arman brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     // logoPath: "/images/logo1.png",
     title: "Frontend Developer",
@@ -174,7 +174,7 @@ const expCards = [
   },
   {
     review:
-      "Nikhil’s contributions to our team have been outstanding. He approaches challenges with a problem-solving mindset.",
+      "Arman’s contributions to our team have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     // logoPath: "/images/logo2.png",
     title: "eGovernance & Information Technology Intern",
@@ -185,7 +185,7 @@ const expCards = [
   },
   {
     review:
-      "Nikhil's work brought a high level of quality and efficiency. He delivered solutions that enhanced our user's experience & meet our product goals.",
+      "Arman's work brought a high level of quality and efficiency. He delivered solutions that enhanced our user's experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     // logoPath: "/images/logo3.png",
     title: "Software Engineer Intern",
