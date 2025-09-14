@@ -2,9 +2,66 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { expCards } from "../constants";
+// import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";
+
+const expCards = [
+  {
+    review:
+      "Arman brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    imgPath: "/images/exp1.png",
+    logoPath: (
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+        IQ
+      </h1>
+    ),
+    title: "Frontend Developer",
+    date: "December 2023 - Present",
+    responsibilities: [
+      "Developed and maintained user-facing features for the Client Products.",
+      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+      "Optimized web applications for maximum speed and scalability.",
+      "Integrated and consumed backend APIs to enable dynamic data rendering and ensure seamless communication between frontend and server-side services.",
+    ],
+  },
+  {
+    review:
+      "Arman’s contributions to our team have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/exp2.png",
+    imageElement: (
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+        HarshaWeb Solutions
+      </h1>
+    ),
+    logoPath: <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+        HW
+      </h1>,
+    title: "MERN Stack Developer",
+    date: "April 2023 - October 2023",
+    responsibilities: [
+      "Worked as a MERN Stack Developer, building and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
+    ],
+  },
+  {
+    review:
+      "Arman's work brought a high level of quality and efficiency. He delivered solutions that enhanced our user's experience & meet our product goals.",
+    imgPath: "/images/exp3.png",
+    imageElement: (
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
+        Galaxy Exhibitions
+      </h1>
+    ),
+    logoPath: <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+        GE
+      </h1>,
+    title: "Full Stack Developer",
+    date: "Februrary 2023 - April 2023",
+    responsibilities: [
+      "Built a React.js-based software solution that enables users to report and flag sensitive content with precise timestamp tracking, improving moderation workflows.",
+    ],
+  },
+];
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,7 +163,11 @@ const Experience = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
                     <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                      {card.imageElement ? (
+                        card.imageElement
+                      ) : (
+                        <img src={card.imgPath} alt="exp-img" />
+                      )}
                     </div>
                   </GlowCard>
                 </div>
@@ -118,7 +179,7 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        {card.logoPath}
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

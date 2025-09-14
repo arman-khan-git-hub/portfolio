@@ -48,27 +48,25 @@ const ShowcaseSection = () => {
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
               <img
-                src="/images/project/project1.png"
-                alt="Project 1"
+                src="/images/project/centralhub.png"
+                alt="IQSetters Central Hub"
                 className="object-top"
               />
             </div>
             <div className="text-content">
               <h2
                 className="cursor-pointer underline"
-                onClick={() => window.open("https://investmentexperts.in/")}
+                onClick={() => window.open("https://centralhub.iqsetters.in/")}
               >
-                Investment Experts
+                IQSetters Central Hub
               </h2>
               <p className="text-white-50 md:text-xl">
-                Comprehensive Real Estate Website Solution featuring an
-                integrated Admin Panel for efficient content management,
-                property listings, and updates.
+                IQ Setters Central Hub is a web application built with React, Tailwind CSS, and Redux Toolkit, designed to efficiently manage both product-based and project-based clients. The platform provides a centralized solution for organizing client data, streamlining workflows, and improving overall client management operations.
               </p>
             </div>
           </div>
 
-          {/* RIGHT */}
+          {/* RIGHT
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="xl:h-[37vh] md:h-52 lg:h-72 h-64 rounded-xl">
@@ -101,7 +99,7 @@ const ShowcaseSection = () => {
                 KREO World
               </h2>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
